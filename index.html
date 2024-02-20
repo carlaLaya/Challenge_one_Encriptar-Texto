@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Challenge ONE</title>
+
+</head>
+<body class="body-container">
+    <div class="logo">
+        <a href="#">
+            <img src="img/Logo.png" alt="logo" class="logo">
+        </a>
+    </div>
+    <main class="main-container">
+        <textarea cols="70" rows="10" id="input-text" class="text-input" placeholder="Escriba aquì su texto" autofocus=""></textarea>
+        <div class="info">
+            <h2>Escriba en minúscula y sin acentos</h2>
+            <div class="button-container">
+                <button id="encriptar-button" onclick="encriptar()">Encriptar </button>
+                <button id="desencriptar-button" onclick="desencriptar()" >Desencriptar</button>
+                <button id="borrar" onclick= "borrarTexto ()">Borrar texto</button>
+            </div>
+        </div>
+    </main>
+    <div class="encriptado">
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+        </div>
+      </div>
+    </div>
+    <aside id="sidebar" class="sidebar-container">
+        <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+    </aside>
+    <script src="javascrip.js"></script>
+</body>
+
+
+</html>
