@@ -1,6 +1,7 @@
 function encriptar() {
     let texto = document.getElementById("input-text").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
+
   
     let textoCifrado = texto
       .replace(/e/gi, "enter")
@@ -12,9 +13,11 @@ function encriptar() {
     if (texto.length != 0) {
       document.getElementById("input-text").value = textoCifrado;
       tituloMensaje.textContent = "Texto encriptado con éxito";
-    } else {
 
-      tituloMensaje.textContent = "¡ Atención ! Ningún mensaje fue encontrado";
+    } else {
+    tituloMensaje.textContent = "Ningún mensaje fue encontrado";
+    swal("¡ Atención !", "Debes ingresar un texto", "warning");
+
     }
   };
   
@@ -32,7 +35,6 @@ function encriptar() {
       if (texto.length != 0) {
         document.getElementById("input-text").value = textoCifrado;
         tituloMensaje.textContent = "Texto desencriptado con éxito";
-        //parrafo.textContent = "";
       } else {
         tituloMensaje.textContent = "¡ Atención ! Ningún mensaje fue encontrado";
     }
