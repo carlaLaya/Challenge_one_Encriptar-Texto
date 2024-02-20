@@ -16,12 +16,13 @@ footer {
   font-size: 72.5%;
   font-family: Inter;
   background-color: var(--background);
- 
+ color: var(--primary);
 }
 
 .logo {
   display: block;
 }
+
 body {
   font-size: 1.6rem;
   margin: 0 auto;
@@ -31,7 +32,7 @@ body {
 }
 button {
   flex: 1;
-  height: 60px;
+  height: 40px;
   border-radius: 30px;
   font-size: 1.6rem;
   cursor: pointer;
@@ -46,6 +47,7 @@ button:hover {
 #borrar {
   background-color: white;
   color: var(--primary);
+
 }
 #titulo-mensaje{
   color: var(--primary);
@@ -95,7 +97,6 @@ color:var(--primary) ;
 .body-container .main-container .text-input::placeholder {
 color: var(--primary);
 width: 80%;
-
 }
 .body-container .main-container .textarea-label {
 color: transparent;
@@ -172,7 +173,7 @@ margin-top: 5rem;
   }
 
   .body-container .main-container .text-input {
-    width: 100%;
+    width: 80%;
   }
 
   .body-container .sidebar-container img {
