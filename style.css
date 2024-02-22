@@ -33,7 +33,7 @@ body {
 button {
   flex: 1;
   height: 40px;
-  border-radius: 30px;
+  border-radius: 50px;
   font-size: 1.6rem;
   cursor: pointer;
   border: 1px solid var(--primary);
@@ -42,7 +42,9 @@ button {
   transition: box-shadow 0.3s ease;
 }
 button:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font: 2em ;
 }
 #borrar {
   background-color: white;
@@ -79,6 +81,7 @@ font-size: 2.5rem;
 color: var(--primary);
 border: 2px solid rgb(247, 238, 238);
 border: none;
+cursor: pointer;
 }
 .body-container .main-container .text-input:focus {
 outline: none;
@@ -155,8 +158,8 @@ margin-top: 32px;
 
 .body-container footer {
 grid-area: footer;
-text-align: center;
 margin-top: 5rem;
+text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -180,14 +183,33 @@ margin-top: 5rem;
     width: 0%;
   }
 
-  .body-container .sidebar-container h2 {
-    padding: 0 0 16px;
+  .body-container .sidebar-container {
+    width: 100%;
+  }
+  h2{
+    margin: 30px;
+  }
+  .body-container .button-container{
+    align-items: center;
+    padding: 10px 0 16px;
   }
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width:480px) {
+  
+  h3 {
+    text-align: center;
+  }
+
+  .titulo-mensaje{
+    color: aqua;
+  }
   button {
     flex: none;
+    border-radius: 50px;
+    width: 140px ;
+    align-items: center;
+    
   }
 
   .body-container {
@@ -196,7 +218,10 @@ margin-top: 5rem;
 
   .body-container .main-container div .button-container {
     flex-direction: column;
+    align-items: center;
+    margin: 20px 0 0 0;  
   }
+ 
 }
 
 

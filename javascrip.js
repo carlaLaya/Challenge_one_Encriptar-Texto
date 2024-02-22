@@ -1,6 +1,7 @@
 function encriptar() {
-    let texto = document.getElementById("input-text").value;
+    let texto = document.getElementById ("input-text").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
+    let imagen= document.getElementById ("mensaje-correcto");
 
   
     let textoCifrado = texto
@@ -13,6 +14,7 @@ function encriptar() {
     if (texto.length != 0) {
       document.getElementById("input-text").value = textoCifrado;
       tituloMensaje.textContent = "Texto encriptado con éxito";
+      imagen.src = "./img/mensaje-correcto.png";
 
     } else {
     tituloMensaje.textContent = "Ningún mensaje fue encontrado";
