@@ -49,7 +49,6 @@ button:hover {
 #borrar {
   background-color: white;
   color: var(--primary);
-
 }
 #titulo-mensaje{
   color: var(--primary);

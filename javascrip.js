@@ -46,3 +46,4 @@ function borrarTexto (){
  document.querySelector('#input-text').value = '';
 };
 
+
