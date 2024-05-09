@@ -1,10 +1,4 @@
-/* Reset de algunos estilos por defecto del navegador */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Estilos base */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -22,11 +16,10 @@ body {
   padding: 20px 0;
 }
 
-
-
 .text-input {
   width: 100%;
 }
+
 .info {
   background-color: #f9f9f9;
   border-radius: 5px;
@@ -44,6 +37,7 @@ body {
 .button-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .button-container button {
@@ -64,7 +58,6 @@ body {
   background-color: #041d38;
 }
 
-
 .encriptado {
   width: 100%;
   margin: 10px auto;
@@ -73,7 +66,7 @@ body {
 .sidebar-container {
   background-color: #dbe6ea;
   border-radius: 5px;
-  padding: 20px;
+  padding: 1px;
   width: 100%;
   max-width: 800px;
   margin: 20px auto;
@@ -86,51 +79,41 @@ body {
 }
 
 footer {
-  background-color: #dbe6ea;
+  background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 20px;
-  position: fixed;
+  padding: 3px;
   width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 footer h2 {
   font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 footer p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
-
 
 /* Estilos para pantallas pequeñas */
-@media (max-width: 480px) {
-  .encriptado, .sidebar-container {
-      max-width: 100%;
-  }
-}
 @media (max-width: 480px) {
   .button-container {
-      flex-direction: row;
-      justify-content: space-around;
+    flex-direction: column;
   }
-}
 
-/* Estilos para pantallas pequeñas */
-@media (max-width: 480px) {
-  .sidebar-container {
-    position: static;
+  .button-container button {
     width: 100%;
-    margin-bottom: 20px;
-}
-
-  button {
-      margin-bottom: 10px;
+    margin: 10px 0;
   }
+
+  footer {
+    position: static;
+  }
+
   footer h2, footer p {
     font-size: 1em;
-    width: 100%;
-    position: fixed;
-}
+  }
 }
